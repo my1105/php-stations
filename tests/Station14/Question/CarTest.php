@@ -44,9 +44,9 @@ class CarTest extends TestCase
     /**
      * @test
      */
-    public function getPassenger_passengerの数を表示する(): void
+    public function getPassengers_passengerの数を表示する(): void
     {
-        $method = new ReflectionMethod($this->car, 'getPassenger');
+        $method = new ReflectionMethod($this->car, 'getPassengers');
         $method->setAccessible(true);
 
         $this->expectOutputString(0);
