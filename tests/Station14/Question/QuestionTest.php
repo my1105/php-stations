@@ -15,7 +15,7 @@ class QuestionTest extends TestCase
     /**
      * @test
      */
-    public function turnRight_backLeftを実行する(): void
+    public function pickup_getDoorsを実行する(): void
     {
         $question = new Question();
         $passenger = (new ReflectionClass(Car::class))->getStaticPropertyValue('passenger');
