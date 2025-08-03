@@ -6,5 +6,24 @@ class Question
 {
     public function main(mixed $arg): string
     {
+        if ($arg === 0) {
+            return 'zero';
+        }
+
+        if ($arg === '1') {
+            return 'foo';
+        }
+
+        if ($arg === 1) {
+            return 'bar';
+        }
+
+        if (is_int($arg) || is_string($arg)) {
+            if ((int)$arg >= 2) {
+                return 'baz';
+            }
+        }
+
+        return 'others';
     }
-}
+    }
